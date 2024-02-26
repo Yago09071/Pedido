@@ -14,6 +14,8 @@ body{
 
 #selects-div{
     display: none;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 .error-modal{
