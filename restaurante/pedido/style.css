@@ -18,6 +18,14 @@ body{
     gap: 2vh;
 }
 
+#pedido-pronto{
+    display: none;
+}
+
+.bagde{
+    font-size: 1.6rem !important;
+}
+
 .error-modal{
     position: absolute;
     top: 50%;

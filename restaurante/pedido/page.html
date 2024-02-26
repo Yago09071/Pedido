@@ -32,21 +32,21 @@
         <h2>Olá, <span id="nomePrint"></span> vamos começar seu pedido</h2>
         <br>
         <h3>Pratos</h3> 
-        <select class="form-select" aria-label="Default select example" id="SelectPrato">
+        <select class="form-select" aria-label="Default select example" id="selectPrato">
             <option selected>Selececione seu prato</option>
             <option value="Pf">Prato feito completo</option>
             <option value="Strogonoff">Strogonoff</option>
             <option value="Lasanha">Lasanha</option>
           </select>
           <h3>Bebidas</h3>
-          <select class="form-select" aria-label="Default select example" id="SelectBebida">
+          <select class="form-select" aria-label="Default select example" id="selectBebida">
             <option selected>Selececione sua bebida</option>
             <option value="Suco">Suco</option>
             <option value="Refrigerante">Refrigerante</option>
             <option value="Agua">Agua</option>
           </select>
           <h3>Sobremesa</h3>
-          <select class="form-select" aria-label="Default select example" id="SelectPrato">
+          <select class="form-select" aria-label="Default select example" id="selectSobremesa">
             <option selected>Selecione sua sobremesa</option>
             <option value="Bananasplit">Banana split</option>
             <option value="Sorbet">Sorbet de morango</option>
@@ -58,8 +58,18 @@
         <button type="button" onclick="limpar()" class="btn btn-outline-secondary">Limpar</button>
         </div>
         <div>
-            <span class="badge text-bg-primary">Total</span>
-            <span class="badge text-bg-danger" id="resultado"></span>
+            <span class="badge bg-dark">Total:</span>
+            <span class="badge bg-danger" id="resultado"></span>
+        </div>
+        <div id="pedido-pronto" class="pronto">
+          <h4>Prato</h4>
+          <p id="prato-pronto"></p>
+          <br>
+          <h4>Bebida</h4>
+          <p id="bebida-pronto"></p>
+          <br>
+          <h4>Sobremesa</h4>
+          <p id="sobremesa-pronto"></p>
         </div>
     </div>
 </body>
